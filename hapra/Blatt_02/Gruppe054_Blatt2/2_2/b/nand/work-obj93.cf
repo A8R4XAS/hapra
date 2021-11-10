@@ -1,0 +1,7 @@
+v 4
+file . "nandgate_tb.vhdl" "55b22b189da20d2bdb81fb1d247b8f9921a4ca86" "20211029083822.206":
+  entity nandgate_tb at 1( 0) + 0 on 13;
+  architecture test of nandgate_tb at 9( 193) + 0 on 14;
+file . "nandgate.vhdl" "8ceb95cca63e3630a007b3c01cd07d6cd0b3844f" "20211029083822.040":
+  entity nandgate at 5( 237) + 0 on 11;
+  architecture rtl of nandgate at 29( 1060) + 0 on 12;

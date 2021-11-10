@@ -1,0 +1,653 @@
+$date
+  Fri Nov  5 21:29:23 2021
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module rca_tb $end
+$var reg 8 ! a[7:0] $end
+$var reg 8 " b[7:0] $end
+$var reg 1 # cin $end
+$var reg 8 $ sum[7:0] $end
+$var reg 1 % cout $end
+$scope module rca_adder $end
+$var reg 8 & a[7:0] $end
+$var reg 8 ' b[7:0] $end
+$var reg 1 ( cin $end
+$var reg 1 ) cout $end
+$var reg 8 * sum[7:0] $end
+$var reg 1 + wire_1 $end
+$var reg 1 , wire_2 $end
+$var reg 1 - wire_3 $end
+$var reg 1 . wire_4 $end
+$var reg 1 / wire_5 $end
+$var reg 1 0 wire_6 $end
+$var reg 1 1 wire_7 $end
+$var reg 1 2 wire_8 $end
+$var reg 9 3 a1[8:0] $end
+$var reg 9 4 b1[8:0] $end
+$var reg 1 5 overflow $end
+$scope module add0 $end
+$var reg 1 6 a $end
+$var reg 1 7 b $end
+$var reg 1 8 cin $end
+$var reg 1 9 cout $end
+$var reg 1 : sum $end
+$var reg 1 ; wire_1 $end
+$var reg 1 < wire_2 $end
+$var reg 1 = wire_3 $end
+$upscope $end
+$scope module add1 $end
+$var reg 1 > a $end
+$var reg 1 ? b $end
+$var reg 1 @ cin $end
+$var reg 1 A cout $end
+$var reg 1 B sum $end
+$var reg 1 C wire_1 $end
+$var reg 1 D wire_2 $end
+$var reg 1 E wire_3 $end
+$upscope $end
+$scope module add2 $end
+$var reg 1 F a $end
+$var reg 1 G b $end
+$var reg 1 H cin $end
+$var reg 1 I cout $end
+$var reg 1 J sum $end
+$var reg 1 K wire_1 $end
+$var reg 1 L wire_2 $end
+$var reg 1 M wire_3 $end
+$upscope $end
+$scope module add3 $end
+$var reg 1 N a $end
+$var reg 1 O b $end
+$var reg 1 P cin $end
+$var reg 1 Q cout $end
+$var reg 1 R sum $end
+$var reg 1 S wire_1 $end
+$var reg 1 T wire_2 $end
+$var reg 1 U wire_3 $end
+$upscope $end
+$scope module add4 $end
+$var reg 1 V a $end
+$var reg 1 W b $end
+$var reg 1 X cin $end
+$var reg 1 Y cout $end
+$var reg 1 Z sum $end
+$var reg 1 [ wire_1 $end
+$var reg 1 \ wire_2 $end
+$var reg 1 ] wire_3 $end
+$upscope $end
+$scope module add5 $end
+$var reg 1 ^ a $end
+$var reg 1 _ b $end
+$var reg 1 ` cin $end
+$var reg 1 a cout $end
+$var reg 1 b sum $end
+$var reg 1 c wire_1 $end
+$var reg 1 d wire_2 $end
+$var reg 1 e wire_3 $end
+$upscope $end
+$scope module add6 $end
+$var reg 1 f a $end
+$var reg 1 g b $end
+$var reg 1 h cin $end
+$var reg 1 i cout $end
+$var reg 1 j sum $end
+$var reg 1 k wire_1 $end
+$var reg 1 l wire_2 $end
+$var reg 1 m wire_3 $end
+$upscope $end
+$scope module add7 $end
+$var reg 1 n a $end
+$var reg 1 o b $end
+$var reg 1 p cin $end
+$var reg 1 q cout $end
+$var reg 1 r sum $end
+$var reg 1 s wire_1 $end
+$var reg 1 t wire_2 $end
+$var reg 1 u wire_3 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b00000001 !
+b00000000 "
+1#
+b00000001 $
+0%
+b00000001 &
+b00000000 '
+1(
+0)
+b00000001 *
+1+
+1,
+1-
+1.
+1/
+10
+11
+U2
+bUUUUUUUUU 3
+bU11111111 4
+U5
+16
+17
+18
+19
+1:
+0;
+0<
+1=
+0>
+1?
+1@
+1A
+0B
+1C
+1D
+0E
+0F
+1G
+1H
+1I
+0J
+1K
+1L
+0M
+0N
+1O
+1P
+1Q
+0R
+1S
+1T
+0U
+0V
+1W
+1X
+1Y
+0Z
+1[
+1\
+0]
+0^
+1_
+1`
+1a
+0b
+1c
+1d
+0e
+0f
+1g
+1h
+1i
+0j
+1k
+1l
+0m
+0n
+1o
+1p
+1q
+0r
+1s
+1t
+0u
+#10000000
+0#
+b00000001 $
+0(
+b00000001 *
+0+
+0,
+0-
+0.
+0/
+00
+01
+bU00000000 4
+07
+08
+09
+1:
+1;
+0=
+0?
+0@
+0A
+0B
+0C
+0D
+0G
+0H
+0I
+0J
+0K
+0L
+0O
+0P
+0Q
+0R
+0S
+0T
+0W
+0X
+0Y
+0Z
+0[
+0\
+0_
+0`
+0a
+0b
+0c
+0d
+0g
+0h
+0i
+0j
+0k
+0l
+0o
+0p
+0q
+0r
+0s
+0t
+#20000000
+b00001001 !
+b00000001 "
+1#
+b00001000 $
+b00001001 &
+b00000001 '
+1(
+b00001000 *
+1+
+1,
+1-
+1.
+1/
+10
+11
+bU11111110 4
+18
+19
+0:
+1<
+1?
+1@
+1A
+1C
+1D
+1G
+1H
+1I
+0J
+1K
+1L
+1N
+1O
+1P
+1Q
+1R
+0S
+1U
+1W
+1X
+1Y
+0Z
+1[
+1\
+1_
+1`
+1a
+0b
+1c
+1d
+1g
+1h
+1i
+0j
+1k
+1l
+1o
+1p
+1q
+0r
+1s
+1t
+#30000000
+0#
+b00001010 $
+0(
+b00001010 *
+1+
+0,
+0-
+0.
+0/
+00
+01
+bU00000001 4
+17
+08
+19
+0:
+0;
+0<
+1=
+0?
+1@
+0A
+1B
+0C
+0D
+0G
+0H
+0I
+0J
+0K
+0L
+0O
+0P
+0Q
+1R
+1S
+0T
+0U
+0W
+0X
+0Y
+0Z
+0[
+0\
+0_
+0`
+0a
+0b
+0c
+0d
+0g
+0h
+0i
+0j
+0k
+0l
+0o
+0p
+0q
+0r
+0s
+0t
+#40000000
+b00001010 !
+b00001001 "
+1#
+b00000001 $
+b00001010 &
+b00001001 '
+1(
+b00000001 *
+0+
+1,
+1-
+1.
+1/
+10
+11
+bU11110110 4
+06
+07
+18
+09
+1:
+0;
+0<
+0=
+1>
+1?
+0@
+1A
+0B
+0C
+0D
+1E
+1G
+1H
+1I
+0J
+1K
+1L
+1P
+1Q
+0R
+1T
+1W
+1X
+1Y
+0Z
+1[
+1\
+1_
+1`
+1a
+0b
+1c
+1d
+1g
+1h
+1i
+0j
+1k
+1l
+1o
+1p
+1q
+0r
+1s
+1t
+#50000000
+0#
+b00010011 $
+0(
+b00010011 *
+0,
+0-
+0/
+00
+01
+bU00001001 4
+17
+08
+1:
+1;
+0?
+0A
+1B
+1C
+0E
+0G
+0H
+0I
+0J
+0K
+0L
+1O
+0P
+0R
+0S
+0T
+1U
+0W
+0Y
+1Z
+0[
+0\
+0_
+0`
+0a
+0b
+0c
+0d
+0g
+0h
+0i
+0j
+0k
+0l
+0o
+0p
+0q
+0r
+0s
+0t
+#60000000
+b11111111 !
+b00000001 "
+1#
+b11111110 $
+b11111111 &
+b00000001 '
+1(
+b11111110 *
+1+
+1,
+1-
+1/
+10
+11
+bU11111110 4
+16
+07
+18
+19
+0:
+1;
+1<
+0=
+1?
+1@
+1A
+1B
+0C
+1E
+1F
+1G
+1H
+1I
+1J
+0K
+1M
+1P
+1R
+1V
+1W
+1Y
+1Z
+0[
+0\
+1]
+1^
+1_
+1`
+1a
+1b
+0c
+1e
+1f
+1g
+1h
+1i
+1j
+0k
+1m
+1n
+1o
+1p
+1q
+1r
+0s
+1u
+#70000000
+0#
+b00000000 $
+1%
+0(
+1)
+b00000000 *
+1+
+1,
+1-
+1.
+1/
+10
+11
+bU00000001 4
+17
+08
+19
+0:
+0;
+0<
+1=
+0?
+1@
+1A
+0B
+1C
+1D
+0E
+0G
+1H
+1I
+0J
+1K
+1L
+0M
+0O
+1P
+1Q
+0R
+1S
+1T
+0U
+0W
+1X
+1Y
+0Z
+1[
+1\
+0]
+0_
+1`
+1a
+0b
+1c
+1d
+0e
+0g
+1h
+1i
+0j
+1k
+1l
+0m
+0o
+1p
+1q
+0r
+1s
+1t
+0u
+#80000000

@@ -1,0 +1,50 @@
+$date
+  Fri Oct 29 17:55:37 2021
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module signals_tb $end
+$var reg 1 ! a01 $end
+$var reg 1 " o01 $end
+$var reg 1 # a0l $end
+$var reg 1 $ o0l $end
+$var reg 1 % a0h $end
+$var reg 1 & o0h $end
+$var reg 1 ' a0x $end
+$var reg 1 ( o0x $end
+$var reg 1 ) a0w $end
+$var reg 1 * o0w $end
+$var reg 1 + a0z $end
+$var reg 1 , o0z $end
+$var reg 1 - a1l $end
+$var reg 1 . o1l $end
+$var reg 1 / a1h $end
+$var reg 1 0 o1h $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+0#
+0$
+0%
+1&
+0'
+X(
+0)
+X*
+0+
+X,
+0-
+1.
+1/
+10
+#10000000
