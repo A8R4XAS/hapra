@@ -7,29 +7,35 @@ end mux41_tb;
 architecture testbench of mux41_tb is
   component mux41
     port (
---missing
+            i1 : IN  std_logic_vector(2 DOWNTO 0); 
+            i2 : IN  std_logic_vector(2 DOWNTO 0);
+            i3 : IN  std_logic_vector(2 DOWNTO 0);
+            i4 : IN  std_logic_vector(2 DOWNTO 0);
+            sel : IN std_logic_vector(1 DOWNTO 0);
+            y  : OUT std_logic_vector(2 DOWNTO 0)  
     );
   end component;
 
---missing
+  signal s : std_logic_vector(1 DOWNTO 0);
+  signal a, b, c, d, e : std_logic_vector(2 DOWNTO 0);
 
 begin
-    multiplex: mux41 port map(--missing);
+    multiplex: mux41 port map(i1 => a, i2 => b, i3 => c, i4 => d, sel => s, y => e);
 
     process begin
-        sel <= "00";
+        a <= "000";
+        b <= "001";
+        c <= "010";
+        d <= "011";
+        wait for 5 ns;
+        s <= "00";
         wait for 10 ns;
-        sel <= "01";
+        s <= "01";
         wait for 10 ns;
-        sel <= "10";
+        s <= "10";
         wait for 10 ns;
-        sel <= "11";
+        s <= "11";
         wait for 10 ns;
-		sel <= "10";
-        wait for 10 ns;
-		sel <= "11";
-        wait for 10 ns;
-		
         wait;
     end process;
 end testbench;

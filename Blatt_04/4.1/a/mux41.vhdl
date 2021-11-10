@@ -18,36 +18,61 @@ ARCHITECTURE rtl OF mux41 IS
 --you can add more components you need
 --you can also increase the number of inputs, e.g., the "and" gate blow is extended to a 3-input gate.
 
-    COMPONENT and_gate IS
+    COMPONENT andgate IS
         PORT (
               input1     : IN std_logic; --s_0
               input2     : IN std_logic; --s_1
 		      input3     : IN std_logic; --e_n signal
-              and_output : OUT std_logic
+              and_result : OUT std_logic
         );
     END COMPONENT;
 
-    COMPONENT or_gate is
+    
+    COMPONENT orgate is
         PORT (
-                input1 : IN std_logic;
-                input2 : IN std_logic;
-                input3 : IN std_logic;
-                or_output : OUT std_logic;
+              input1 : IN std_logic;
+              input2 : IN std_logic;
+              input3 : IN std_logic;
+              input4 : IN std_logic;
+              or_result : OUT std_logic
         );
     END COMPONENT;
+
+
+    COMPONENT notgate is
+        PORT (
+              input1 : IN std_logic;
+              not_result : OUT std_logic
+        );
+    END COMPONENT;
+
 
 --you can define more signals here if you need, e.g.,:
-    signal not_sel : std_logic_vector(1 DOWNTO 0); 
+    signal not_sel : std_logic_vector(1 DOWNTO 0);
+
+    signal and_out1 : std_logic_vector(2 downto 0);
+    signal and_out2 : std_logic_vector(2 downto 0);
+    signal and_out3 : std_logic_vector(2 downto 0);
+    signal and_out4 : std_logic_vector(2 downto 0);
+
+    signal or_out : std_logic_vector(2 downto 0);
+    
 
 BEGIN
+
+    tmp1 : notgate port map(input1 => sel(0), not_result => not_sel(0));
+    tmp2 : notgate port map(input1 => sel(1), not_result => not_sel(1));
 
 --bitwise operation for each logic gate because the input signals are multilple-bit signals.
 --please complete the implementation based on the schema you designed.
     and_gate_assignment : for i in 0 to 2 generate
-        and_output1: andgate port map(--missing);
-        and_output2: andgate port map(--missing);
-        and_output3: andgate port map(--missing);
-        and_output4: andgate port map(--missing);
+        and_output1: andgate port map(input1 => not_sel(0), input2 => not_sel(1), input3 => i1(i), and_result => and_out1(i));
+        and_output2: andgate port map(input1 =>     sel(0), input2 => not_sel(1), input3 => i2(i), and_result => and_out2(i));
+        and_output3: andgate port map(input1 => not_sel(0), input2 =>     sel(1), input3 => i3(i), and_result => and_out3(i));
+        and_output4: andgate port map(input1 =>     sel(0), input2 =>     sel(1), input3 => i4(i), and_result => and_out4(i));
+
+        or_output : orgate port map(input1 => and_out1(i), input2 => and_out2(i), input3 => and_out3(i), input4 => and_out4(i), or_result => or_out(i));
+    
     end generate and_gate_assignment;
-	y <= 
+	y <= or_out;
 END rtl;
