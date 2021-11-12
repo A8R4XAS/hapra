@@ -1,0 +1,346 @@
+$date
+  Fri Nov 12 15:36:28 2021
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module demux14_tb $end
+$var reg 3 ! y0[2:0] $end
+$var reg 3 " i0[2:0] $end
+$var reg 3 # i1[2:0] $end
+$var reg 3 $ i2[2:0] $end
+$var reg 3 % i3[2:0] $end
+$var reg 2 & sel[1:0] $end
+$scope module demultiplex $end
+$var reg 3 ' y0[2:0] $end
+$var reg 2 ( sel[1:0] $end
+$var reg 3 ) i0[2:0] $end
+$var reg 3 * i1[2:0] $end
+$var reg 3 + i2[2:0] $end
+$var reg 3 , i3[2:0] $end
+$var reg 2 - not_sel[1:0] $end
+$var reg 3 . and_out1[2:0] $end
+$var reg 3 / and_out2[2:0] $end
+$var reg 3 0 and_out3[2:0] $end
+$var reg 3 1 and_out4[2:0] $end
+$scope module tmp1 $end
+$var reg 1 2 input1 $end
+$var reg 1 3 not_result $end
+$var reg 1 4 tmp $end
+$upscope $end
+$scope module tmp2 $end
+$var reg 1 5 input1 $end
+$var reg 1 6 not_result $end
+$var reg 1 7 tmp $end
+$upscope $end
+$scope module and_gate_assignment(0) $end
+$scope module and_output1 $end
+$var reg 1 8 input1 $end
+$var reg 1 9 input2 $end
+$var reg 1 : input3 $end
+$var reg 1 ; and_result $end
+$var reg 1 < and_gate $end
+$upscope $end
+$scope module and_output2 $end
+$var reg 1 = input1 $end
+$var reg 1 > input2 $end
+$var reg 1 ? input3 $end
+$var reg 1 @ and_result $end
+$var reg 1 A and_gate $end
+$upscope $end
+$scope module and_output3 $end
+$var reg 1 B input1 $end
+$var reg 1 C input2 $end
+$var reg 1 D input3 $end
+$var reg 1 E and_result $end
+$var reg 1 F and_gate $end
+$upscope $end
+$scope module and_output4 $end
+$var reg 1 G input1 $end
+$var reg 1 H input2 $end
+$var reg 1 I input3 $end
+$var reg 1 J and_result $end
+$var reg 1 K and_gate $end
+$upscope $end
+$upscope $end
+$scope module and_gate_assignment(1) $end
+$scope module and_output1 $end
+$var reg 1 L input1 $end
+$var reg 1 M input2 $end
+$var reg 1 N input3 $end
+$var reg 1 O and_result $end
+$var reg 1 P and_gate $end
+$upscope $end
+$scope module and_output2 $end
+$var reg 1 Q input1 $end
+$var reg 1 R input2 $end
+$var reg 1 S input3 $end
+$var reg 1 T and_result $end
+$var reg 1 U and_gate $end
+$upscope $end
+$scope module and_output3 $end
+$var reg 1 V input1 $end
+$var reg 1 W input2 $end
+$var reg 1 X input3 $end
+$var reg 1 Y and_result $end
+$var reg 1 Z and_gate $end
+$upscope $end
+$scope module and_output4 $end
+$var reg 1 [ input1 $end
+$var reg 1 \ input2 $end
+$var reg 1 ] input3 $end
+$var reg 1 ^ and_result $end
+$var reg 1 _ and_gate $end
+$upscope $end
+$upscope $end
+$scope module and_gate_assignment(2) $end
+$scope module and_output1 $end
+$var reg 1 ` input1 $end
+$var reg 1 a input2 $end
+$var reg 1 b input3 $end
+$var reg 1 c and_result $end
+$var reg 1 d and_gate $end
+$upscope $end
+$scope module and_output2 $end
+$var reg 1 e input1 $end
+$var reg 1 f input2 $end
+$var reg 1 g input3 $end
+$var reg 1 h and_result $end
+$var reg 1 i and_gate $end
+$upscope $end
+$scope module and_output3 $end
+$var reg 1 j input1 $end
+$var reg 1 k input2 $end
+$var reg 1 l input3 $end
+$var reg 1 m and_result $end
+$var reg 1 n and_gate $end
+$upscope $end
+$scope module and_output4 $end
+$var reg 1 o input1 $end
+$var reg 1 p input2 $end
+$var reg 1 q input3 $end
+$var reg 1 r and_result $end
+$var reg 1 s and_gate $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b111 !
+b111 "
+b000 #
+b000 $
+b000 %
+b00 &
+b111 '
+b00 (
+b111 )
+b000 *
+b000 +
+b000 ,
+b11 -
+b111 .
+b000 /
+b000 0
+b000 1
+02
+13
+14
+05
+16
+17
+18
+19
+1:
+1;
+1<
+1=
+0>
+1?
+0@
+0A
+0B
+1C
+1D
+0E
+0F
+0G
+0H
+1I
+0J
+0K
+1L
+1M
+1N
+1O
+1P
+1Q
+0R
+1S
+0T
+0U
+0V
+1W
+1X
+0Y
+0Z
+0[
+0\
+1]
+0^
+0_
+1`
+1a
+1b
+1c
+1d
+1e
+0f
+1g
+0h
+0i
+0j
+1k
+1l
+0m
+0n
+0o
+0p
+1q
+0r
+0s
+#10000000
+b000 "
+b111 $
+b01 &
+b01 (
+b000 )
+b111 +
+b10 -
+b000 .
+b111 0
+12
+03
+04
+08
+0;
+0<
+0=
+1B
+1E
+1F
+1G
+0L
+0O
+0P
+0Q
+1V
+1Y
+1Z
+1[
+0`
+0c
+0d
+0e
+1j
+1m
+1n
+1o
+#20000000
+b111 #
+b000 $
+b10 &
+b10 (
+b111 *
+b000 +
+b01 -
+b111 /
+b000 0
+02
+13
+14
+15
+06
+07
+18
+09
+1=
+1>
+1@
+1A
+0B
+0C
+0E
+0F
+0G
+1H
+1L
+0M
+1Q
+1R
+1T
+1U
+0V
+0W
+0Y
+0Z
+0[
+1\
+1`
+0a
+1e
+1f
+1h
+1i
+0j
+0k
+0m
+0n
+0o
+1p
+#30000000
+b000 #
+b111 %
+b11 &
+b11 (
+b000 *
+b111 ,
+b00 -
+b000 /
+b111 1
+12
+03
+04
+08
+0=
+0@
+0A
+1B
+1G
+1J
+1K
+0L
+0Q
+0T
+0U
+1V
+1[
+1^
+1_
+0`
+0e
+0h
+0i
+1j
+1o
+1r
+1s
+#40000000

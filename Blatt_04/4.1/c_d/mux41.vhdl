@@ -66,6 +66,7 @@ BEGIN
 --bitwise operation for each logic gate because the input signals are multilple-bit signals.
 --please complete the implementation based on the schema you designed.
     and_gate_assignment : for i in 0 to 2 generate
+        
         and_output1: andgate port map(input1 => not_sel(0), input2 => not_sel(1), input3 => i1(i), and_result => and_out1(i));
         and_output2: andgate port map(input1 =>     sel(0), input2 => not_sel(1), input3 => i2(i), and_result => and_out2(i));
         and_output3: andgate port map(input1 => not_sel(0), input2 =>     sel(1), input3 => i3(i), and_result => and_out3(i));
