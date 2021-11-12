@@ -15,21 +15,21 @@ use ieee.std_logic_1164.all;
 -- like a header file (.h)
 -- std_logic can have 9 different values, it is part of std_logic_1164 package
 -- you can think of it as a single bit
-entity orgate is
+entity orgate_2 is
   port (
     input1 : in std_logic;
     input2 : in std_logic;
-    or_result : out std_logic
+    or_2_result : out std_logic
   );
-end orgate;
+end orgate_2;
 
 -- architecture describes functionality of particular entity
 -- like .c implementation of a function
 -- actually describes the "internal wiring" of block
-architecture rtl of orgate is
+architecture rtl of orgate_2 is
   -- interconnection signals, constants, or other components
   signal or_gate : std_logic;
 begin
   or_gate <= input1 or input2;
-  or_result <= or_gate;
+  or_2_result <= or_gate;
 end rtl;
